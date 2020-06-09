@@ -4,8 +4,7 @@ name: Docker CD
 
 on:
   push:
-    branches:
-      - "add-dockerfile"
+    branches: [add-dockerfile]
     # branches-ignore:
     #   - "ci-workflow"
     #   - "docker-workflow"
