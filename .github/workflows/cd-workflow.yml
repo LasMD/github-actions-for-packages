@@ -4,12 +4,14 @@ name: Docker CD
 
 on:
   push:
-    branches: [add-dockerfile]
     # branches-ignore:
     #   - "ci-workflow"
     #   - "docker-workflow"
     paths:
       - "**Dockerfile**"
+  pull_request:
+    branches: 
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
